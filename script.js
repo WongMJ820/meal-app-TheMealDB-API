@@ -179,3 +179,4 @@ function applyCombinedFilter() {
         .catch(err => console.error("Error combining filters:", err));
     }
 }
+
