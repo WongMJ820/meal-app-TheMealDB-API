@@ -1,0 +1,161 @@
+/* 🌌 SPACE THEME STYLING 🌌 */
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    background: radial-gradient(ellipse at top, #0b0f29 0%, #000 100%);
+    color: #f0f0f0;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #a3c4ff;
+    text-shadow: 0 0 10px #427bff, 0 0 20px #3f5fff;
+}
+
+h2 {
+    color: #89b4ff;
+    margin-top: 40px;
+    text-shadow: 0 0 8px #2648ff;
+}
+
+p {
+    color: #89b4ff;
+    margin-top: 40px;
+    font-size: 18px;
+    text-shadow: 0 0 8px #2648ff;
+}
+
+/* 🔭 Meal Grid */
+.meal-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+/* 🪐 Meal Cards */
+.meal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid rgba(173, 216, 230, 0.2);
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    background: rgba(20, 25, 60, 0.85);
+    box-shadow: 0 0 10px rgba(0, 119, 255, 0.3),
+                0 0 20px rgba(100, 150, 255, 0.1);
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.meal:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 149, 255, 0.6);
+}
+
+.meal img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* 🚀 Buttons */
+button {
+    margin-top: 12px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #3f5fff, #1e90ff);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(100, 150, 255, 0.5);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #4c8fff, #3f5fff);
+    box-shadow: 0 0 20px rgba(150, 200, 255, 0.8);
+}
+
+/* 🛰️ Dropdowns */
+select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #2a4eff;
+    width: 220px;
+    background: rgba(10, 15, 40, 0.9);
+    color: #dce4ff;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(80, 120, 255, 0.2);
+}
+
+option {
+    background: #0f153a;
+    color: #b8cfff;
+}
+
+/* 🌠 Popup box */
+.infobox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 30, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    backdrop-filter: blur(6px);
+}
+
+.infobox-content {
+    background: rgba(20, 25, 60, 0.95);
+    border: 1px solid rgba(100, 150, 255, 0.3);
+    border-radius: 16px;
+    padding: 25px;
+    width: 80%;
+    max-width: 500px;
+    height: 80%;
+    position: relative;
+    overflow-y: auto;
+    box-shadow: 0 0 30px rgba(100, 150, 255, 0.5);
+    color: #e8eeff;
+}
+
+.infobox-content img {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 50px;
+    color: #89b4ff;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.close-btn:hover {
+    color: #ff6f6f;
+    transform: rotate(90deg);
+}
