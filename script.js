@@ -43,7 +43,7 @@ function updateMeals(meals, titleText) {
 // Fetch meals from backend
 function showMealFirstB() {
     fetch("http://localhost:5000/meals")
-    // fetch("https://www.themealdb.com/api/json/v1/1/search.php?f=b")
+    fetch("https://www.themealdb.com/api/json/v1/1/search.php?f=b")
         .then(res => res.json())
         .then(data => updateMeals(data.meals, "🍽️ Meal App (Letter B)"))
         .catch(err => console.error("Error fetching meals:", err));
@@ -179,3 +179,4 @@ function applyCombinedFilter() {
         .catch(err => console.error("Error combining filters:", err));
     }
 }
+
